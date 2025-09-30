@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Project.css";
+import "./project.css";
 
 function Projects() {
   const [filter, setFilter] = useState("all");
