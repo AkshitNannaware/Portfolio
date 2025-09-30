@@ -67,7 +67,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#experience&skills" className="nav-link" onClick={closeMobileMenu}>
+              <a href="#technical-skills" className="nav-link" onClick={closeMobileMenu}>
                 Experience
               </a>
             </li>
