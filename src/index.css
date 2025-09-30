@@ -1,5 +1,5 @@
 /* Global responsive safeguards */
-html, body {
+html {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -14,3 +14,15 @@ img, video, canvas {
   --space-section: clamp(40px, 7vw, 100px);
 }
 
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
