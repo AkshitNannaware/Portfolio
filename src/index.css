@@ -1,0 +1,16 @@
+/* Global responsive safeguards */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth font scaling */
+:root {
+  --space-section: clamp(40px, 7vw, 100px);
+}
+
