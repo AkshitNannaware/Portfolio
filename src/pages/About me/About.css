@@ -481,7 +481,7 @@
 
 @media (max-width: 480px) {
   .stat-item {
-    max-width: 100%;
+    width: 147px;
   }
 
   .point-content h4 {
@@ -491,9 +491,13 @@
   .point-content p {
     font-size: 15px;
   }
-
+  .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-left: 0px;
+  }
   .about {
-    padding: 50px 20px;
+    padding: 50px 0px;
     text-align: center;
   }
   .container-about {
@@ -506,6 +510,16 @@
   .section-title.animate {
     opacity: 1;
     transform: translateY(0);
-    left: -14px;
+    left: 3px;
+  }
+  .about-subtitle.animate {
+    opacity: 1;
+    transform: translateX(0);
+    padding-left: 16px;
+  }
+  .about-stats.animate {
+    opacity: 1;
+    transform: translateY(0);
+    padding-left: 34px;
   }
 }

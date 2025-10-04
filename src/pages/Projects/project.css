@@ -316,6 +316,21 @@
   .projects {
     padding: 60px 0;
   }
+  .buttons.animate {
+    display: block;
+  }
+  .filter-buttons.animate { 
+    display: block;
+    margin-left: 25px;
+  }
+  p.section-subtitle.animate {
+    padding-right: 25px;
+  }
+  .projects-grid.animate {
+    padding-left: 16px;
+    padding-right: 17px;
+    gap: 40px;
+  }
 
    .projects-grid {
     grid-template-columns: 1fr;
@@ -336,8 +351,8 @@
   }
 
   .filter-buttons button {
-    width: 200px;
-    max-width: 220px;
+    width: 104px;
+    margin-right: 7px;
   }
 
   .project-image {
