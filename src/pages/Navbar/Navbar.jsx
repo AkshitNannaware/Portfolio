@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { MdHome } from "react-icons/md";
+import { FaUser } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import "./Navbar.css";
 
@@ -6,6 +10,17 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showBooking, setShowBooking] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 968);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,57 +56,80 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-        <div className="nav-container">
-          <div className="nav-logo">
-            <a href="#home">
-              <span className="logo-text">Akshit</span>
-              <span className="logo-dot">.</span>
+      {/* Top Navbar - Only show on desktop */}
+      {!isMobile && (
+        <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+          <div className="nav-container">
+            <div className="nav-logo">
+              <a href="#home">
+                <span className="logo-text">Akshit</span>
+                <span className="logo-dot">.</span>
+              </a>
+            </div>
+
+            <ul className="nav-menu">
+              <li className="nav-item">
+                <a href="/" className="nav-link">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#about" className="nav-link">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#projects" className="nav-link">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#technical-skills" className="nav-link">
+                  Experience
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#contact" className="nav-link">
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="https://cal.com/akshit-nannaware" target="_blank" rel="noopener noreferrer" className="nav-link cta-button">
+                  Book Meeting
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      )}
+
+      {/* Bottom Navbar - Only on mobile */}
+      {isMobile && (
+        <nav className="bottom-navbar">
+          <div className="bottom-nav-container">
+            <a href="/" className="bottom-nav-link" onClick={closeMobileMenu}>
+              <span className="nav-icon"><MdHome /></span>
+              <span>Home</span>
+            </a>
+            <a href="#about" className="bottom-nav-link" onClick={closeMobileMenu}>
+              <span className="nav-icon"><FaUser /></span>
+              <span>About</span>
+            </a>
+            <a href="#projects" className="bottom-nav-link" onClick={closeMobileMenu}>
+              <span className="nav-icon"><FaBriefcase /></span>
+              <span>Projects</span>
+            </a>
+            <a href="#technical-skills" className="bottom-nav-link" onClick={closeMobileMenu}>
+              <span className="nav-icon">🚀</span>
+              <span>Experience</span>
+            </a>
+            <a href="#contact" className="bottom-nav-link" onClick={closeMobileMenu}>
+              <span className="nav-icon"><MdEmail /></span>
+              <span>Contact</span>
             </a>
           </div>
-
-          <ul className={`nav-menu ${isMobileMenuOpen ? "active" : ""}`}>
-            <li className="nav-item">
-              <a href="/" className="nav-link" onClick={closeMobileMenu}>
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#about" className="nav-link" onClick={closeMobileMenu}>
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#projects" className="nav-link" onClick={closeMobileMenu}>
-                Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#technical-skills" className="nav-link" onClick={closeMobileMenu}>
-                Experience
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#contact" className="nav-link" onClick={closeMobileMenu}>
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="https://cal.com/akshit-nannaware" target="_blank" rel="noopener noreferrer" className="nav-link cta-button" onClick={closeMobileMenu}>
-                Book Meeting
-              </a>
-            </li>
-          </ul>
-          <div
-            className={`hamburger ${isMobileMenuOpen ? "active" : ""}`}
-            onClick={toggleMobileMenu}
-          >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      )}
 
       {/* Booking Section */}
       {showBooking && (

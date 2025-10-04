@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -6,7 +12,7 @@
   overflow: hidden;
   background: #0f0f13;
   color: #e8e8e8;
-  padding: 0;
+  padding: 0; 
 }
 
 /* Background Effects */
@@ -508,5 +514,6 @@
   }
   .hero {
     height: 1095px;
+    top: -122px;
   }
 }
