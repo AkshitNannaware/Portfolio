@@ -510,19 +510,17 @@
   .section-title.animate {
     opacity: 1;
     transform: translateY(0);
-    left: 3px;
   }
   .about-subtitle.animate {
     opacity: 1;
     transform: translateX(0);
-    padding-left: 16px;
   }
   .about-stats.animate {
     opacity: 1;
     transform: translateY(0);
-    padding-left: 26px;
   }
   .about-points.animate {
-    width: 331px;
+    width: 100%;
+    max-width: 331px;
   }
 }

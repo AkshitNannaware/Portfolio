@@ -245,6 +245,138 @@
 
 
 /* ✅ Mobile Responsive CSS (for all mobiles) */
+/* @media (max-width: 986px) {
+  .projects-grid.animate {
+    padding: 0 20px;
+  }
+  .project-card {
+    height: auto;
+    min-height: 400px;
+  }
+  .project-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 50px 20px;
+  }
+
+  .section-title-project {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .filter-buttons {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .filter-buttons button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    border-radius: 12px;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 60px 20px;
+  }
+  
+  .projects-grid.animate {
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title-project {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .filter-buttons button {
+    width: 120px;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+  
+  .project-card {
+    height: auto;
+    min-height: 400px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 986px) {
   .projects-grid.animate {
     padding-left: 60px;
@@ -353,6 +485,7 @@
   .filter-buttons button {
     width: 104px;
     margin-right: 7px;
+    color: black;
   }
 
   .project-image {
