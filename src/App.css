@@ -11,3 +11,19 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px; /* ensures rem units are consistent */
+}
+body {
+  font-family: 'YourFont', sans-serif;
+}

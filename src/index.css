@@ -26,3 +26,15 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px; /* ensures rem units are consistent */
+}
+body {
+  font-family: 'YourFont', sans-serif;
+}
