@@ -660,6 +660,6 @@
 
   .hero {
     height: auto;       /* natural height based on content */
-    top: 1.2rem;             /* reset offset */
+    top: 2.2rem;             /* reset offset */
   }
 }
