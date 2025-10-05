@@ -122,6 +122,7 @@
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .filter-buttons button:hover {
@@ -131,7 +132,7 @@
 
 .filter-buttons button.active {
   background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
-  color: white;
+  color: black;
 }
 
 .projects-grid {
