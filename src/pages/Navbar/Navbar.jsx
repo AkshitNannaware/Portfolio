@@ -3,6 +3,7 @@ import { MdHome } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { BsFileEarmarkTextFill } from "react-icons/bs";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import "./Navbar.css";
 
@@ -120,7 +121,7 @@ function Navbar() {
               <span>Projects</span>
             </a>
             <a href="#technical-skills" className="bottom-nav-link" onClick={closeMobileMenu}>
-              <span className="nav-icon">🚀</span>
+              <span className="nav-icon"><BsFileEarmarkTextFill /></span>
               <span>Experience</span>
             </a>
             <a href="#contact" className="bottom-nav-link" onClick={closeMobileMenu}>
