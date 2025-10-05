@@ -619,3 +619,50 @@
     top: -89px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .hero-name {
+    font-size: 3.5rem;  /* pehle 4.5rem → reduce */
+  }
+
+  .hero-title {
+    font-size: 1.8rem;  /* pehle 2.2rem → reduce */
+  }
+
+  .hero-description {
+    font-size: 1.2rem;  /* pehle 1.3rem → thoda chhota */
+    padding-top: 0;     /* agar unnecessary top padding hai */
+  }
+
+  .image-container {
+    width: 380px;       /* pehle 450px → reduce */
+    height: 380px;
+    top: 0;             /* avoid huge negative positioning */
+  }
+
+  .hero-buttons .btn {
+    font-size: 1rem;    /* buttons thode chhote */
+    padding: 15px 30px;
+  }
+
+  .hero {
+    min-height: 100vh;  /* natural height */
+  }
+}
