@@ -542,18 +542,18 @@
   .image-container {
     width: 350px;
     height: 350px;
-    top: 0;
+    top: -919px;
   }
   .hero-description {
-    font-size: 1.05rem;
-    padding-top: 0;
+    font-size: 34px;
+    padding-top: 386px;
   }
   .hero-image {
-    height: auto;
+    height: 0px;
   }
   .hero {
-    height: auto;
-    top: 0;
+    height: 1375px;
+    top: -89px;
   }
 }
 
@@ -578,17 +578,17 @@
   .image-container {
     width: 280px;
     height: 280px;
-    top: 0;
+    top: -919px;
   }
   .hero-description {
-    font-size: 1rem;
-    padding-top: 0;
+    font-size: 34px;
+    padding-top: 369px;
   }
    .hero-image {
-    height: auto;
+    height: 0px;
   }
   .hero {
-    height: auto;
+    height: 1375px;
   }
 }
 
@@ -602,20 +602,20 @@
   }
   
   .hero-description {
-    font-size: 0.95rem;
-    padding-top: 0;
+    font-size: 1.1rem;
+    padding-top: 240px;
   }
   
   .image-container {
     width: 220px;
     height: 220px;
-    top: 0;
+    top: -734px;
   }
   .hero-image {
-    height: auto;
+    height: 0px;
   }
   .hero {
-    height: auto;
-    top: 0;
+    height: 1095px;
+    top: -89px;
   }
 }
