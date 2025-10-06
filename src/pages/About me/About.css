@@ -405,6 +405,7 @@
 @media (max-width: 480px) {
   .stat-item {
     width: 147px;
+    margin-left: 6px;
   }
 
   .point-content h4 {
