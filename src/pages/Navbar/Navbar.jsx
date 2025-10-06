@@ -128,6 +128,7 @@ function Navbar() {
               <span className="nav-icon"><MdEmail /></span>
               <span>Contact</span>
             </a>
+            <a href="https://cal.com/akshit-nannaware" target="_blank" rel="noopener noreferrer" className="bottom-nav-link cta-button"></a>
           </div>
         </nav>
       )}
