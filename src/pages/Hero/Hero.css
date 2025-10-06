@@ -510,8 +510,8 @@
   .image-container {
     width: 220px;
     height: 220px;
-    top: -734px;
-    left: -23px;
+    top: -764px;
+    left: -32px;
   }
   .hero-image {
     height: 0px;
@@ -522,5 +522,10 @@
   }
   .hero-text {
     margin-left: -109px;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 100px;
+    text-align: center;
   }
 }
