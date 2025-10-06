@@ -337,4 +337,9 @@
     width: 100%;
     max-width: 331px;
   }
+  .container-about {
+    max-width: 1200px;
+    margin: -40px auto 45px;
+    padding: 0px 0px;
+  }
 }
