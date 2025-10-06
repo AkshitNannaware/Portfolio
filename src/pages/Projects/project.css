@@ -1,7 +1,7 @@
 .section-title-project {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 0.1s ease, transform 0.1s ease;
 }
 
 .section-title-project.animate {
@@ -12,7 +12,7 @@
 .section-subtitle {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease 0.2s, transform 1s ease 0.2s;
+  transition: opacity 0.1s ease 0.2s, transform 0.1s ease 0.2s;
 }
 
 .section-subtitle.animate {
@@ -23,7 +23,7 @@
 .filter-buttons {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease 0.3s, transform 1s ease 0.3s;
+  transition: opacity 0.1s ease 0.3s, transform 0.1s ease 0.3s;
 }
 
 .filter-buttons.animate {
@@ -34,7 +34,7 @@
 .projects-grid {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease 0.4s, transform 1s ease 0.4s;
+  transition: opacity 0.1s ease 0.4s, transform 0.1s ease 0.4s;
 }
 
 .projects-grid.animate {
@@ -45,7 +45,7 @@
 .project-card {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 0.1s ease, transform 0.1s ease;
 }
 
 .projects-grid.animate .project-card {
