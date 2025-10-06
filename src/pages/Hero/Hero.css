@@ -511,6 +511,7 @@
     width: 220px;
     height: 220px;
     top: -734px;
+    left: -23px;
   }
   .hero-image {
     height: 0px;
@@ -518,5 +519,8 @@
   .hero {
     height: 1095px;
     top: -89px;
+  }
+  .hero-text {
+    margin-left: -109px;
   }
 }
