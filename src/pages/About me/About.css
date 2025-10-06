@@ -436,7 +436,10 @@
   }
   .about-subtitle.animate {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(0);
+    margin-left: -70px;
+    font-size: 25px;
+    margin-bottom: 44px;
   }
   .about-stats.animate {
     opacity: 1;
@@ -460,5 +463,19 @@
 
   .stat-number {
     font-size: 1.2rem;
+  }
+
+
+
+
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease 0.5s, transform 0.8s ease 0.5s;
   }
 }
