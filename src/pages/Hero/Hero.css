@@ -356,7 +356,7 @@
 
 .image-wrapper:hover .profile-img {
   filter: grayscale(0) contrast(1.1);
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
 }
 
 .image-gradient-border {
