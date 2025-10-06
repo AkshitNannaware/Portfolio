@@ -326,32 +326,6 @@
 
 
 
-/* Laptop / Desktop Fix */
-@media screen and (min-width: 1024px) and (max-width: 1600px) {
-
-  /* Nav link size adjust */
-  .nav-link {
-    font-size: 1.2rem; /* 25px → relative size */
-  }
-
-  /* Navbar padding adjust */
-  .navbar {
-    padding: 1rem 5%;
-  }
-
-  /* CTA buttons */
-  .cta-button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  /* Optional: section spacing if using variables */
-  :root {
-    --space-section: 50px; /* fixed for laptop */
-  }
-}
-
-
 
 
 
