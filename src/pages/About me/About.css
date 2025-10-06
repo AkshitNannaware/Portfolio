@@ -124,7 +124,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 320px;
+  /* max-width: 320px; */
   margin: 0 auto;
   color: #e2e8f0;
 }
