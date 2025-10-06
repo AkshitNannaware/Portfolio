@@ -292,7 +292,6 @@
     display: flex;
   }
 
-  /* Show bottom navbar only on mobile */
   .bottom-navbar {
     display: block;
   }
@@ -300,7 +299,7 @@
   /* Add padding to main content to account for bottom navbar */
   body {
     padding-bottom: 70px;
-    padding-top: 60px; /* For top navbar */
+    padding-top: 60px;
   }
 }
 
@@ -311,35 +310,6 @@
     padding-top: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
