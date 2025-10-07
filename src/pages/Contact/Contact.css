@@ -230,6 +230,7 @@ textarea {
 @media (max-width: 576px) {
   .contact {
     padding: 15px;
+    margin-bottom: -80px;
   }
 
   .contact-header h2 {

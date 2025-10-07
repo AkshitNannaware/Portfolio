@@ -1,0 +1,102 @@
+// import React from "react";
+// import "./StartProject.css";
+
+// const StartProject = () => {
+//   const handleBookMeeting = () => {
+//     window.open("https://cal.com/akshit-nannaware", "_blank"); // same behavior as navbar
+//   };
+
+//   const handleDownloadResume = () => {
+//     alert("Downloading resume...");
+//   };
+
+//   return (
+//     <div className="start-project-page">
+//       <main className="project-main">
+//         <div className="project-container">
+//           <div className="project-info-section">
+//             <div className="project-info-content">
+//               <h1 className="project-title">Ready to start project?</h1>
+//               <p className="project-description">
+//                 Share your project vision, and we'll bring it to life. Let's collaborate and turn your ideas into reality.
+//               </p>
+
+//               <div className="action-buttons">
+//                 <button className="action-btn cta-btn" onClick={handleBookMeeting}>
+//                   Book a Meeting
+//                 </button>
+//                 <button className="action-btn secondary-btn" onClick={handleDownloadResume}>
+//                   Download Resume
+//                 </button>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </main>
+//     </div>
+//   );
+// };
+
+// export default StartProject;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+import "./StartProject.css";
+
+const StartProject = () => {
+  const handleBookMeeting = () => {
+    window.open("https://cal.com/akshit-nannaware", "_blank");
+  };
+
+  const handleDownloadResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1573hsYY5Pjqhw8v62nxPJIU6nwU3o1FY/view?usp=drivesdk",
+      "_blank"
+    );
+  };
+
+  return (
+    <div className="start-project-page">
+      <main className="project-main">
+        <div className="project-container">
+          <div className="project-info-section">
+            <div className="project-info-content">
+              <h1 className="project-title">Ready to start project?</h1>
+              <p className="project-description">
+                Share your project vision, and we'll bring it to life. Let's collaborate and turn your ideas into reality.
+              </p>
+
+              <div className="action-buttons">
+                <button className="action-btn cta-btn" onClick={handleBookMeeting}>
+                  Book a Meeting
+                </button>
+                <button className="btn btn-secondary" onClick={handleDownloadResume}>
+                  <span className="btn-content">
+                    <span className="btn-text">Download Resume</span>
+                  </span>
+                  <div className="btn-shine"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default StartProject;
