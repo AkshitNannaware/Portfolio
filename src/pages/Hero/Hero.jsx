@@ -141,9 +141,11 @@ function Hero() {
             <div className="image-container">
               <div className="image-wrapper">
                 <img 
-                  src="/WhatsApp Image 2025-09-17 at 20.32.39_049c16c0.jpg" 
-                  alt="Akshit Nannaware" 
+                  src="\WhatsApp Image 2025-09-17 at 20.32.39_049c16c0.webp" 
+                  alt="Akshit Nannaware"
                   className="profile-img"
+                  loading="eager"
+                  decoding="async"
                 />
                 {/* Animated Border Gradient */}
                 <div className="image-gradient-border"></div>
